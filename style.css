@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html element styling */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+/* utility classes */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header styling */
+.header {
+  background-color: #fff;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #008cff;
+}
+
+.header h1 span {
+  color: #42515f;
+}
+
+/* form styling */
+.form-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 700px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.form-header {
+  background-color: #008cff;
+  color: #fff;
+  position: relative;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.form-header h1 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.form-header i {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+form {
+  padding: 3rem 8rem;
+  background-color: #fff;
+}
+
+form label {
+  display: block;
+  font-size: 1.4rem;
+  color: #42515f;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+
+.address-group {
+  display: flex;
+  gap: 2rem;
+}
+
+.address-group div {
+  width: 100%;
+}
+
+form > div:last-child {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+form > div:last-child button {
+  text-transform: capitalize;
+  background-color: #e2e2e2;
+  color: #42515f;
+  border: 1px solid #969696;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+button[type="submit"] {
+  margin-right: 2rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #008cff;
+  color: #fff;
+}
+
+button[type="reset"]:hover {
+  background-color: #707070;
+  color: #fff;
+}

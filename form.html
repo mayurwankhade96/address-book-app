@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/86ddb1ba29.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Address Book Form</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <h1>address<br /><span>book</span></h1>
+      </div>
+    </header>
+
+    <!-- form -->
+    <div class="form-container">
+      <div class="form">
+        <div class="form-header">
+          <h1>person address form</h1>
+          <i class="fas fa-times-circle fa-3x"></i>
+        </div>
+
+        <form>
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="fullName" />
+
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phoneNumber" />
+
+          <label for="address">Address</label>
+          <textarea name="address" id="address" rows="5"></textarea>
+
+          <div class="address-group">
+            <div>
+              <label for="city">City</label>
+              <select name="city" id="city">
+                <option selected disabled>Select City</option>
+                <option value="vashi">Vashi</option>
+                <option value="kamothe">Kamothe</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="state">State</label>
+              <select name="state" id="state">
+                <option selected disabled>Select State</option>
+                <option value="vashi">Vashi</option>
+                <option value="kamothe">Kamothe</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="zip">Zip Code</label>
+              <input type="text" name="zip" id="zip" />
+            </div>
+          </div>
+
+          <div>
+            <button type="submit">add</button>
+            <button type="reset">reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
